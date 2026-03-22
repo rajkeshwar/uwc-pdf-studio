@@ -1,7 +1,8 @@
 {
-  "name": "folioforge",
+  "name": "uwc-pdf-studio",
   "version": "1.0.0",
-  "description": "FolioForge — Privacy-first PDF & AI document studio. 100% in-browser.",
+  "license": "MIT",
+  "description": "PDF Studio — Privacy-first PDF & AI document studio. 100% in-browser.",
   "type": "module",
   "scripts": {
     "dev": "web-dev-server --config web-dev-server.config.mjs",
