@@ -4,25 +4,28 @@
   "description": "FolioForge — Privacy-first PDF & AI document studio. 100% in-browser.",
   "type": "module",
   "scripts": {
-    "dev":         "web-dev-server --config web-dev-server.config.mjs",
-    "build":       "tsc --noEmit && rollup -c rollup.config.js",
+    "dev": "web-dev-server --config web-dev-server.config.mjs",
+    "build": "tsc --noEmit && rollup -c rollup.config.js",
     "build:watch": "rollup -c rollup.config.js --watch",
-    "typecheck":   "tsc --noEmit",
-    "clean":       "rm -rf dist"
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
-    "lit":   "^3.1.0",
+    "lit": "^3.1.0",
     "tslib": "^2.6.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs":    "^25.0.7",
-    "@rollup/plugin-node-resolve":"^15.2.3",
-    "@rollup/plugin-replace":     "^5.0.5",
-    "@rollup/plugin-terser":      "^0.4.4",
-    "@rollup/plugin-typescript":  "^11.1.5",
-    "@web/dev-server":            "^0.4.5",
-    "@web/dev-server-esbuild":    "^1.0.2",
-    "rollup":                     "^4.12.0",
-    "typescript":                 "^5.3.3"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/minimatch": "^6.0.0",
+    "@web/dev-server": "^0.4.5",
+    "@web/dev-server-esbuild": "^1.0.2",
+    "@web/rollup-plugin-html": "^3.1.0",
+    "rollup": "^4.12.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "typescript": "^5.3.3"
   }
 }
