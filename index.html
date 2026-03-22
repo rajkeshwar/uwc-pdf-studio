@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="PDF Studio — Privacy-first PDF & AI studio. Merge, compress, sign, annotate and use AI entirely in your browser. Zero uploads.">
+  <meta name="theme-color" content="#6366f1">
+  <title>PDF Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --uwc-font: 'Inter', system-ui, -apple-system, sans-serif; color-scheme: light dark; }
+    html, body { height: 100%; font-family: var(--uwc-font); background: #f8fafc; color: #0f172a; }
+    html[data-theme="dark"] body { background: #0f172a; color: #f1f5f9; }
+
+    /* Loading skeleton */
+    uwc-app-shell:not(:defined) {
+      display: flex; align-items: center; justify-content: center;
+      height: 100dvh; flex-direction: column; gap: 12px;
+    }
+    uwc-app-shell:not(:defined)::before {
+      content: ''; width: 40px; height: 40px;
+      border: 3px solid #e2e8f0; border-top-color: #6366f1;
+      border-radius: 50%; animation: spin .8s linear infinite;
+    }
+    uwc-app-shell:not(:defined)::after {
+      content: 'Loading PDF Studio…'; font-size: 14px; color: #64748b;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <uwc-app-shell></uwc-app-shell>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
